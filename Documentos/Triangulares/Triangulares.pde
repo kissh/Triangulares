@@ -37,3 +37,25 @@ void setup(){
   nterminos(34);
   draw(34);
 }
+
+
+OBJECT 1
+
+class triangulares{
+int hue=90;
+int compute (int n)
+{
+ int [] array=new int[n+1];
+ for(int i=0;i<n+1;i++){
+ array[i]=((i*(i+1))/2);
+ }
+  return array[n];
+}
+void imprimir (int s)
+{int triangle = width / s;
+    for (int i = 0; i < s; i++) {
+      fill(hue, 100, map(compute(i+1), 0, compute(s), 0, 100));
+      rect(i*triangle_x1, 0, ___, 50);
+ }
+}
+}
